@@ -12,6 +12,7 @@ const producer = kafka.producer();
 const connectProducer = async () => {
   try {
     await producer.connect();
+
     console.log('Conectado ao Kafka com sucesso!');
   } catch (err) {
     console.error(err.message);
