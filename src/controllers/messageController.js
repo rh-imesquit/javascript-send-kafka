@@ -8,7 +8,7 @@ const sendMessage = async (req, res) => {
     console.log(message)
 
     await producer.send({
-      topic: 'message-test-topic', // Substitua pelo seu tópico Kafka
+      topic: 'message-test-topic', 
       messages: [
         { value: JSON.stringify(message) }
       ],
